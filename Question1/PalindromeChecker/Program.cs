@@ -41,7 +41,7 @@
             }
 
             // Remove space & convert to lowercase for comparision
-            string newStr = str.Replace(" ", "").ToLower();
+            string newStr = str.Replace(" ", "").ToLower().Trim();
 
             // Check palindrome & display result
             if (IsPalindrome(newStr))
