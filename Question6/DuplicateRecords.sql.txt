@@ -1,0 +1,27 @@
+-- Step-1 Create Table
+
+Create table Employee(
+	Id int,
+	Name varchar(50),
+	Email varchar(100),
+	Salary decimal(10, 2)
+);
+
+
+-- Step-2 Insert Records
+
+Insert into Employee (id, name, email, salary) values (101, 'Ram', 'ram@gmail.com', 35000);
+Insert into Employee (id, name, email, salary) values (102, 'Amit', 'amit@gmail.com', 60000);
+Insert into Employee (id, name, email, salary) values (103, 'Amit', 'amit@gmail.com', 40000);
+Insert into Employee (id, name, email, salary) values (104, 'Priya', 'priya@gmail.com', 30000);
+Insert into Employee (id, name, email, salary) values (105, 'Ram', 'ram@gmail.com', 35000);
+Insert into Employee (id, name, email, salary) values (106, 'Rahul', 'rahul@gmail.com', 50000);
+
+
+-- Step-3 Query to find duplicate records with count
+
+Select Name, Email, count(*) as DuplicateCount
+	from Employee
+	group by Name, Email
+	having count(*) > 1;
+
