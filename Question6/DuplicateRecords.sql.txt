@@ -1,7 +1,7 @@
 -- Step-1 Create Table
 
 Create table Employee(
-	Id int,
+	Id int Primary Key,
 	Name varchar(50),
 	Email varchar(100),
 	Salary decimal(10, 2)
