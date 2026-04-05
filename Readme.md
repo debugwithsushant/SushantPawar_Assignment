@@ -53,7 +53,7 @@ Question7 - Dependency Injection (SampleDI)
 
 ### 🔹 Question 4: LINQ Filter
 - Filters employees with salary greater than 50,000 using LINQ
-- Uses `Where()` and `Any()`
+- Uses `Where()` clause
 
 ---
 
